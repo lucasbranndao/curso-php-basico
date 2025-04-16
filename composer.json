@@ -1,0 +1,18 @@
+{
+    "name": "pinguimacademy/curso-php-basico",
+    "description": "Curso de PHP da pinguim academy",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Pinguimacademy\\CursoPhpBasico\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lucas Brandão",
+            "email": "lucasbranndao@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

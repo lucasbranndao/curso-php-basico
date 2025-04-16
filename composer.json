@@ -4,7 +4,7 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Pinguimacademy\\CursoPhpBasico\\": "src/"
+            "App": "src/"
         }
     },
     "authors": [

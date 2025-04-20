@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <?php  include __DIR__ . './include/head.pthml'?>
+</head>
+<body>
+    <h1>Products Available</h1>
+    <ul>
+        <?php foreach ($filteredProducts as $product): ?>
+            <li>
+                <strong><?= htmlspecialchars($product['name']) ?></strong> - 
+                $<?= number_format($product['price'], 2) ?>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</body>
+</html>

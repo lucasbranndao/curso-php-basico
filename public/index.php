@@ -1,12 +1,16 @@
 <?php
+
+declare(strict_types=1);
 require __DIR__ . '/../vendor/autoload.php';
-use App\Greetings;
-use App\Logger;
 
-$greetings = new Greetings();
-echo $greetings->message('John Doe');
+use App\Models\Product;
 
+$products = Product::all();
+$filteredProducts = array_filter($products,  static fn ($product) => $product['is_available']);
 
-(new Logger())->write('John Doe logged in.');
+$title = 'My WebStore';
+
+require __DIR__ . '/../resources/views/index.phtml';
+
 
 ?>

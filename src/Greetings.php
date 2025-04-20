@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 class Greetings
 {
     public function message(string $name):string

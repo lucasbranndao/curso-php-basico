@@ -7,5 +7,21 @@
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.4"
-  }
+  },
+  "name": "curso-php-basico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev": "npx mix watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lucasbranndao/curso-php-basico/issues"
+  },
+  "homepage": "https://github.com/lucasbranndao/curso-php-basico#readme"
 }

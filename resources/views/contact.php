@@ -3,12 +3,6 @@
 <?php include __DIR__ . '/include/header.php' ?>
 
 
-
-
-
-
-
-
 <main>
     <div class=" mx-auto max-w-7xl py-5 px-8">
         Contact content

@@ -8,3 +8,9 @@ require __DIR__ . '/../resources/helpers.php';
 
 // $products = Product::all();
 // $filteredProducts = array_filter($products,  static fn($product) => $product['is_available']);
+
+$title = 'My WebStore';
+$heading = 'Contact';
+
+
+require __DIR__ . '/../resources/views/contact.php';

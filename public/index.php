@@ -20,6 +20,6 @@ if (array_key_exists($uri, $routes)) {
     require base_path('src/Controllers/' . $routes[$uri] . '.php');
 } else {
     http_response_code(404);
-    echo '404 Not Found';
+    require base_path('resources/views/404.php');
     die();
 }

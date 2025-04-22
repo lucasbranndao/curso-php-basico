@@ -6,18 +6,14 @@ require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/../resources/helpers.php';
 
 
-$tile = 'My Website';
-$heading = 'Home';
-
-require __DIR__ . '/../resources/views/index.php';
 
 $uri = $_SERVER['REQUEST_URI'] ?? '/';
 
 
 
 $routes = [
-    '/' => 'home.php',
-    '/contact' => 'contact.php',
+    '/'        => 'home',
+    '/contact' => 'contact',
 ];
 
 if (array_key_exists($uri, $routes)) {

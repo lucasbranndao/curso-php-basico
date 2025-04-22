@@ -6,7 +6,7 @@ declare(strict_types=1);
 if (!function_exists('base_path')) {
     function base_path(string $path = ''): string
     {
-        return dirname(__DIR__) . '/' . $path;
+        return dirname(__DIR__) . DIRECTORY_SEPARATOR . $path;
     }
 }
 
@@ -26,5 +26,12 @@ if (!function_exists('mix')) {
 
 
         return $content[$path] ?? '';
+    }
+
+    if (!function_exists('resource_path')) {
+        function resource_path(string $path = ''): string
+        {
+            return base_path('resources' . DIRECTORY_SEPARATOR . $path);
+        }
     }
 }

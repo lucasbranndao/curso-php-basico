@@ -7,7 +7,7 @@
 
 // require resource_path('resources/views/index.php');
 
-$tile = 'Home';
-$heading = $tile;
+$title = 'Home';
+$heading = $title;
 
 require resource_path('views/index.php');
